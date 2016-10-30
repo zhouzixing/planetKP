@@ -1,0 +1,129 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin circular($radius) {
+  width : $radius;
+  height : $radius;
+  -webkit-border-radius:50%;
+  border-radius: 50%;
+}
+@mixin circular-ring($radius, $border){
+  width : $radius;
+  height : $radius;
+  -webkit-border-radius:50%;
+  border-radius: 50%;
+  border : $border;
+}
+
+@mixin circular-ratio($radius, $mask-radius, $cycle-bg:#0cc, $ratio-bg:#00aacc, $mask-bg:#FFF){
+  @include circular($radius);
+  position: relative;
+  background: $cycle-bg;
+  .pie_left, .pie_right {
+    position: absolute;
+    width: $radius;
+    height: $radius;
+    top: 0;
+    left: 0;
+  }
+
+  .left, .right {
+    display: block;
+    width:$radius;
+    height:$radius;
+    background:$tab-red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pie_right, .right {
+    clip:rect(0,auto,auto,$radius/2);
+  }
+  .pie_left, .left {
+    clip:rect(0,$radius/2,auto,0);
+  }
+
+  .mask {
+    @include circular($mask-radius);
+    $border-width: ($radius - $mask-radius) / 2;
+    left: $border-width;
+    top: $border-width;
+    background: #0d0020;
+    position: absolute;
+    text-align: center;
+    line-height: $mask-radius;
+    overflow: hidden;
+
+  }
+}
+
+@mixin hollow-circle($outerR:12.5rem, $innerR:11.75rem, $base-clor:#26002c, $active-color:$tab-red){
+  $margin-width : ($outerR - $innerR)/2;
+  .cycle-box {
+    width: $outerR + 0.1rem;
+    height: $outerR + 0.1rem;
+    position: relative;
+    .box-div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      height: $innerR;
+      width: $innerR;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .bg {
+      border: $margin-width solid $base-clor;
+    }
+    .bg2{
+      border: $margin-width solid $base-clor;
+      clip: rect(0, $outerR/2, $outerR, 0);
+    }
+    .rount {
+      border: $margin-width solid $active-color;
+      clip: rect(0, $outerR/2, $outerR, 0);
+      -webkit-transform: rotate(0deg);
+    }
+    .rount2 {
+      border: $margin-width solid $active-color;
+      clip: rect(0, $outerR, $outerR, $outerR/2);
+      -webkit-transform: rotate(0deg);
+      display: none
+    }
+    .mask{
+      text-align: center;
+      overflow: hidden;
+    }
+
+  }
+}
+
+@mixin triangle($direction, $width, $color){
+  @if $direction == up {
+    border-bottom: $width solid $color;
+    border-left: $width solid transparent;
+    border-right:$width solid transparent;
+  } @else if $direction == right {
+    border-left: $width solid $color;
+    border-top:$width solid transparent;
+    border-bottom: $width solid transparent;
+  } @else if $direction == down {
+    border-up: $width solid $color;
+    border-left: $width solid transparent;
+    border-right:$width solid transparent;
+  } @else {
+    border-right: $width solid $color;
+    border-top:$width solid transparent;
+    border-bottom: $width solid transparent;
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

@@ -1,0 +1,326 @@
+.stable {
+  color: #f8f8f8;
+}
+
+.tab-green {
+  color: #ff0066;
+}
+
+.stable-strong {
+  color: #A9A9A9;
+}
+
+.stable-strongest {
+  color: #787878;
+}
+
+.cycle-box {
+  width: 12.6rem;
+  height: 12.6rem;
+  position: relative;
+}
+.cycle-box .box-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 11.75rem;
+  width: 11.75rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.cycle-box .bg {
+  border: 0.375rem solid #26002c;
+}
+.cycle-box .bg2 {
+  border: 0.375rem solid #26002c;
+  clip: rect(0, 6.25rem, 12.5rem, 0);
+}
+.cycle-box .rount {
+  border: 0.375rem solid #ff0066;
+  clip: rect(0, 6.25rem, 12.5rem, 0);
+  -webkit-transform: rotate(0deg);
+}
+.cycle-box .rount2 {
+  border: 0.375rem solid #ff0066;
+  clip: rect(0, 12.5rem, 12.5rem, 6.25rem);
+  -webkit-transform: rotate(0deg);
+  display: none;
+}
+.cycle-box .mask {
+  text-align: center;
+  overflow: hidden;
+}
+
+.width-all {
+  width: 100%;
+}
+
+.font-size-large {
+  font-size: 18px;
+}
+
+.font-size-supper {
+  font-size: 32px;
+}
+
+.font-size-middle {
+  font-size: 16px;
+}
+
+.item-thumbnail-left img.cycle-thumbnail {
+  width: 3.5rem;
+  height: 3.5rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: 1rem;
+  left: 1.2rem;
+}
+
+.mask-inner {
+  line-height: normal;
+}
+
+blockquote, body, button, dd, dl, dt,
+fieldset, form, h1, h2, h3, h4, h5, h6,
+hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.score-summary-bg {
+  background: url(../img/treasure_bg2.png);
+  background-size: 100%;
+}
+.score-summary-bg .cycle-box {
+  margin: 17rem auto 0;
+}
+.score-summary-bg .radio-text {
+  font-size: 4rem;
+  color: #ff0066;
+}
+.score-summary-bg .radio-text + span {
+  font-size: 2.5rem;
+  color: #ff0066;
+}
+.score-summary-bg .remainDone {
+  color: #f8f8f8;
+  font-size: 1rem;
+}
+.score-summary-bg .remainDone span {
+  color: #ff0066;
+}
+
+.grow-task-ratio {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.grow-calender-bg {
+  width: 48px;
+  height: 48px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px auto auto 10%;
+  background-color: #387ef5;
+  float: left;
+  color: #fff;
+}
+.grow-calender-bg i {
+  font-size: 20px;
+  margin-top: 6px;
+}
+.grow-calender-bg div {
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.grow-month {
+  float: left;
+  height: 24px;
+  width: 190px;
+  background-image: url(../img/grow_month.png);
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+.tab-item-active, .activated {
+  color: #ff0066 !important;
+}
+
+.tabs-icon-top .tab-nav {
+  padding-top: 0px;
+}
+
+.tab-treasure {
+  background: #ff0066;
+  color: #fff;
+}
+
+.tab-treasure span {
+  color: #fff !important;
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+
+.study-clock {
+  color: #fff;
+  margin-top: 2rem;
+}
+.study-clock div {
+  text-align: center;
+}
+.study-clock div i {
+  margin-right: .7rem;
+}
+
+.study-top-img {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 9rem;
+  color: #fff;
+  background: url(../img/treasure_bg2.png) -400px -700px;
+}
+.study-top-img .cycle-box {
+  width: 6.7rem;
+  height: 6.7rem;
+  position: relative;
+}
+.study-top-img .cycle-box .box-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 6.2rem;
+  width: 6.2rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.study-top-img .cycle-box .bg {
+  border: 0.2rem solid #26002c;
+}
+.study-top-img .cycle-box .bg2 {
+  border: 0.2rem solid #26002c;
+  clip: rect(0, 3.3rem, 6.6rem, 0);
+}
+.study-top-img .cycle-box .rount {
+  border: 0.2rem solid #ff0066;
+  clip: rect(0, 3.3rem, 6.6rem, 0);
+  -webkit-transform: rotate(0deg);
+}
+.study-top-img .cycle-box .rount2 {
+  border: 0.2rem solid #ff0066;
+  clip: rect(0, 6.6rem, 6.6rem, 3.3rem);
+  -webkit-transform: rotate(0deg);
+  display: none;
+}
+.study-top-img .cycle-box .mask {
+  text-align: center;
+  overflow: hidden;
+}
+.study-top-img .cycle-box {
+  float: right;
+  top: 1rem;
+  color: #ff0066;
+}
+.study-top-img .cycle-box .radio-text {
+  font-size: 2.6rem;
+}
+.study-top-img .cycle-box span {
+  font-size: 1.6rem;
+}
+.study-top-img i {
+  margin-right: 0.3rem;
+}
+.study-top-img .mask-inner {
+  line-height: 6.6rem;
+}
+.study-top-img h4 {
+  padding-left: 0.6rem;
+  color: #fff;
+}
+.study-top-img h4 em {
+  color: #ff0066;
+}
+
+.study-state-bg {
+  background-color: #f8f8f8;
+}
+
+.study-item {
+  padding-top: 1rem;
+}
+
+.sound-bg {
+  position: absolute;
+  right: 1rem;
+  border-radius: 0.3rem;
+  background-color: #95bbc8;
+  padding: 0 0.5rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.parent-guid-img {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 13.2rem;
+  color: #fff;
+  background: url(../img/treasure_bg2.png) -23px -15px;
+  background-size: 117%;
+}
+
+.parent-nav {
+  color: #787878;
+  -webkit-box-shadow: 0px 1px 12px #787878;
+  box-shadow: 0px 1px 12px #787878;
+}
+.parent-nav .active {
+  color: #ff0066;
+}
+
+.jewel-detail {
+  margin: 5rem auto;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+.jewel-detail > img {
+  width: 8.5rem;
+}
+.jewel-detail p {
+  color: #A9A9A9;
+}
+.jewel-detail .jewel-content {
+  position: relative;
+  margin: 2rem auto;
+  width: 56%;
+}
+.jewel-detail ul {
+  float: left;
+}
+.jewel-detail ul li > * {
+  float: left;
+  margin: 0.3rem;
+}
+.jewel-detail ul li {
+  font-size: 1.2rem;
+}
+.jewel-detail ul li i {
+  color: #A9A9A9;
+  margin-right: 5px;
+}
+.jewel-detail > i {
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: #ff0066;
+}
+
+/*# sourceMappingURL=main.css.map */

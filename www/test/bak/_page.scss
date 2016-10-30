@@ -1,0 +1,69 @@
+.grow-cycle{
+  @include circular-ratio(214px, 164px, $positive);
+  margin :20px auto;
+}
+
+
+.grow-task-ratio{
+  color: $stable-strongest;
+  margin-top : 25px;
+}
+
+.radio-text{
+  color: $positive;
+  font-size: 60px;
+  line-height: 60px;
+}
+.hasDone{
+  width: 100%;
+  height: 22px;
+  background-color: $stable;
+  color: $stable-strongest;
+  font-size: $font-size-small;
+}
+.remainDone{
+  color: $stable-strongest;
+  font-size: $font-size-small;
+}
+
+.grow-calender-bg{
+  @include circular(48px);
+  text-align: center;
+  margin: 5px auto auto 10%;
+  background-color: $positive;
+  float: left;
+  color: $light;
+  i{
+    font-size: 20px;
+    margin-top:6px;
+  }
+  div{
+    line-height: 16px;
+    font-size: $font-size-small;
+  }
+
+}
+.grow-month{
+  float: left;
+  height: 24px;
+  width: 190px;
+  background-image: url(../img/grow_month.png);
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+.tabs-icon-top .tab-nav{
+  background: #93cbb7;
+  .tab-item{
+    color: $light;
+    padding-top: 4px;
+  }
+  .tab-item-active {
+    color: $light !important;
+    background: #478181 !important;;
+  }
+}
+
+.tabs-icon-top .tab-nav{
+  padding-top:0px;
+}

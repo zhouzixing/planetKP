@@ -1,0 +1,44 @@
+.stable{
+  color: $stable;
+}
+
+.tab-green{
+  color: $tab-red;
+}
+.stable-strong {
+  color: $stable-strong;
+}
+
+.stable-strongest {
+  color: $stable-strongest;
+}
+@include hollow-circle();
+
+.width-all{
+  width: 100%;
+}
+
+.font-size-large{
+  font-size: $font-size-large;
+}
+.font-size-supper{
+  font-size: $font-size-supper;
+}
+
+.font-size-middle{
+  font-size: $font-size-middle;
+}
+.item-thumbnail-left img.cycle-thumbnail{
+  @include circular(3.5rem);
+  top: 1rem;
+  left: 1.2rem;
+}
+.mask-inner{
+  line-height: normal;
+}
+
+.my-modal{
+
+}
+
+

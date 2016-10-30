@@ -1,0 +1,100 @@
+<ion-view view-title="studyState" class="title-right" hide-nav-bar="true">
+  <div class="scroll-content study-state-bg">
+    <div class="study-top-img">
+      <div class="row">
+        <div class="col col-40">
+          <div class="cycle-box text-right">
+            <div class="box-div bg"></div>
+            <div id="study_round" class="box-div rount"></div>
+            <div class="box-div bg2"></div>
+            <div id="study_round2" class="box-div rount2"></div>
+            <div class="box-div mask">
+              <div class="mask-inner">
+                <span class="radio-text">{{radioNum}}</span><span>%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-60">
+            <div class="padding-top">
+              <h4>任务完成总度<em>{{radioNum}}%</em></h4>
+              <h4>今天剩余<em>4</em>个任务</h4>
+              <div class="row">
+                <div class="col col-50 text-left"><i class="ion-clock"></i>25分18秒</div>
+                <div class="col col-50 text-left"><i class="ion-ios-time-outline"></i>25分12秒</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="item item-divider">10月20号</div>
+      <a class="item item-thumbnail-left study-item" ng-click="modal.show()">
+        <img src="{{G.imgs}}/icons/play-icon.png" class="cycle-thumbnail"/>
+        <p class="padding-bottom">引导动画《求助信号》</p>
+        <h2>寻宝开始</h2>
+        <div class="sound-bg">
+          <i class="fa fa-play"></i>
+          <span>35秒</span>
+        </div>
+      </a>
+      <a class="item item-thumbnail-left study-item" data-type="fire" ng-click="show($event)">
+        <img src="{{G.imgs}}icons/fire-icon.png" class="cycle-thumbnail"/>
+        <p class="padding-bottom">找“火元素”标签</p>
+        <h2>学习“防火安全”</h2>
+        <div class="sound-bg">
+          <i class="fa fa-play"></i>
+          <span>5秒</span>
+        </div>
+      </a>
+      <a class="item item-thumbnail-left study-item" data="water" ng-click="modal.show()">
+        <img src="{{G.imgs}}/icons/water-icon.png" class="cycle-thumbnail"/>
+        <p class="padding-bottom">找“水元素”标签</p>
+        <h2>学习节约用水</h2>
+        <div class="sound-bg">
+          <i class="fa fa-play"></i>
+          <span>10秒</span>
+        </div>
+      </a>
+      <a class="item item-thumbnail-left study-item" data="electric" ng-click="modal.show()">
+        <img src="src/img/icons/electric-icon.png" class="cycle-thumbnail"/>
+        <p class="padding-bottom">找“电元素”标签</p>
+        <h2>学习“清洁能源”</h2>
+        <div class="sound-bg">
+          <i class="fa fa-play"></i>
+          <span>8秒</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</ion-view>
+<script id="templates/modal.html" type="text/ng-template">
+  <ion-modal-view >
+    <div class="jewel-detail" ng-click="modal.hide()">
+      <img src="{{G.imgs}}icons/water-icon.png"/>
+      <h4>
+        水元素
+      </h4>
+      <p class="jewel-suit">适合水龙头、浴缸、洗手盆、饮水机附近</p>
+      <div class="jewel-content clearfix">
+        <ul>
+          <li>
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <div class="">节约水电</div>
+          </li>
+          <li>
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <div class="">健康饮水</div>
+          </li>
+          <li>
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <div class="">保护水资源</div>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+    </div>
+  </ion-modal-view>
+</script>

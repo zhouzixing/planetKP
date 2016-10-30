@@ -1,0 +1,199 @@
+.score-summary-bg{
+  background: url(../img/treasure_bg2.png);
+  background-size: 100%;
+  .cycle-box{
+    margin:17rem auto 0;
+  }
+  .radio-text{
+    font-size: 4rem;
+    color:$tab-red;
+  }
+  .radio-text+span{
+    font-size: 2.5rem;
+    color:$tab-red;
+  }
+  .remainDone{
+    color: $stable;
+    font-size: 1rem;
+    span{
+      color: $tab-red;
+    }
+  }
+}
+
+.grow-task-ratio{
+  margin-top: 2rem;
+  color: $light;
+  font-size: 1.15rem;
+}
+
+
+.grow-calender-bg{
+  @include circular(48px);
+  text-align: center;
+  margin: 5px auto auto 10%;
+  background-color: $positive;
+  float: left;
+  color: $light;
+  i{
+    font-size: 20px;
+    margin-top:6px;
+  }
+  div{
+    line-height: 16px;
+    font-size: $font-size-small;
+  }
+
+}
+.grow-month{
+  float: left;
+  height: 24px;
+  width: 190px;
+  background-image: url(../img/grow_month.png);
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+
+.tab-item-active,.activated {
+  color: $tab-red !important;
+}
+
+
+.tabs-icon-top .tab-nav{
+  padding-top:0px;
+}
+.tab-treasure{
+  background: $tab-red;
+  color: $light;
+}
+
+.tab-treasure span{
+  color: $light !important;
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+.study-clock{
+  color:$light;
+  margin-top: 2rem;
+  div{
+    i{
+      margin-right: .7rem;
+    }
+    text-align: center;
+  }
+}
+
+//学习动态
+.study-top-img{
+  @include hollow-circle(6.6rem,6.2rem);
+  .cycle-box{
+     float: right;
+     top: 1rem;
+     color:$tab-red;
+     .radio-text{
+       font-size: 2.6rem;
+     }
+     span{
+       font-size: 1.6rem;
+     }
+  }
+  i{
+    margin-right: 0.3rem;
+  }
+  position: relative;
+  left:0;
+  right: 0;
+  top: 0;
+  height: 9rem;
+  color:$light;
+  background: url(../img/treasure_bg2.png) -400px -700px;
+  .mask-inner{
+    line-height: 6.6rem;
+  }
+  h4{
+    padding-left: 0.6rem;
+    color:$light;
+    em{
+      color: $tab-red;
+    }
+  }
+
+}
+
+.study-state-bg{
+  background-color: $stable;
+}
+
+.study-item{
+  padding-top: 1rem;
+}
+
+.sound-bg{
+  position: absolute;
+  right:1rem;
+  border-radius: 0.3rem;
+  background-color: #95bbc8;
+  padding: 0 0.5rem;
+  color : $light;
+  font-size: 0.75rem;
+}
+
+.parent-guid-img {
+  position: relative;
+  left:0;
+  right: 0;
+  top: 0;
+  height: 13.2rem;
+  color:$light;
+  background: url(../img/treasure_bg2.png) -23px -15px;
+  background-size: 117%;
+}
+
+.parent-nav{
+  color : $stable-strongest;
+  @include box-shadow(0px 1px 12px $stable-strongest);
+  .active {
+    color : $tab-red;
+  }
+}
+
+.jewel-detail{
+  margin: 5rem auto;
+  @include border-radius(0.3rem);
+  text-align: center;
+  >img{
+    width: 8.5rem;
+  }
+  p {
+    color: $stable-strong;
+  }
+  .jewel-content{
+    position: relative;
+    margin : 2rem auto;
+    width: 56%;
+  }
+  ul {
+    float: left;
+    li> * {
+      float: left;
+      margin:0.3rem;
+    }
+    li {
+      font-size: 1.2rem;
+      i {
+        color: $stable-strong;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > i{
+    margin-top : 3rem;
+    font-size: 5rem;
+    color:$tab-red;
+  }
+
+
+}
+
